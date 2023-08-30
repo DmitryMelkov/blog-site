@@ -11,6 +11,7 @@
   &__logo {
     background-color: $usc-gold;
     padding: 20px;
+    cursor: pointer;
   }
   &__search {
     position: relative;
@@ -19,7 +20,7 @@
     align-items: center;
   }
   &__input {
-    padding-left: 15px;
+    padding-left: 30px;
     padding-right: 80px;
     width: 478px;
     height: 40px;
@@ -29,7 +30,6 @@
     transition: border 0.3s ease-in-out;
   }
   &__input::placeholder {
-    padding-left: 15px;
     @include text(22px, 32.6px, 400, rgba($dynamic-black, 0.6));
     font-family: "Oswald", sans-serif;
   }
@@ -68,8 +68,10 @@
     align-items: center;
   }
   &__admin-btn {
-    margin-right: 23px;
     transition: opacity 0.3s ease-in-out;
+  }
+  &__admin-btn:not(:last-child) {
+    margin-right: 23px;
   }
 }
 

@@ -49,6 +49,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  background-color: $cascading-white;
 }
 
 label {
@@ -100,7 +101,7 @@ input::placeholder {
 
 .main {
   padding-top: 26px;
-  background-color: $cascading-white;
+  padding-bottom: 26px;
 }
 
 .container {
@@ -109,6 +110,10 @@ input::placeholder {
   margin: 0 auto;
   padding-left: 15px;
   padding-right: 15px;
+}
+.intro-container {
+  display: flex;
+  justify-content: space-between;
 }
 .section {
   padding-top: 70px;
