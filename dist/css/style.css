@@ -1332,7 +1332,7 @@ button.swiper-pagination-bullet {
       -ms-flex-direction: column;
           flex-direction: column;
   overflow-y: scroll;
-  height: 55vh;
+  height: 33.8vh;
 }
 
 .content__subscriptions-link {
