@@ -9,9 +9,15 @@
     align-items: center;
   }
   &__logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+  }
+  &__logo-img {
     background-color: $usc-gold;
     padding: 20px;
-    cursor: pointer;
+    margin-right: 10px;
   }
   &__search {
     position: relative;
