@@ -26,7 +26,7 @@
   &__recommend {
     background-color: $colorWhite;
     border-radius: 15px;
-    border: 1px solid $colorGrey;
+    box-shadow: 0 0 0 1px #00000009, 0 4px 25px #00000012;
   }
   &__title {
     margin-top: 7px;
@@ -85,40 +85,7 @@
     padding-left: 30px;
     padding-right: 30px;
   }
-  &__subscriptions-search {
-    position: relative;
-    margin-top: 6px;
-    margin-bottom: 29px;
-  }
-  &__subscriptions-search-input {
-    padding-left: 21px;
-    padding-right: 50px;
-    width: 100%;
-    height: 64px;
-    border: 1px solid $colorGrey;
-    border-radius: 7px;
-    @include text(25px, 37px, 400, rgba($dynamic-black, 058));
-    font-family: "Oswald", "sans-sarif";
-    transition: border 0.3s ease-in-out;
-  }
-  &__subscriptions-search-input::placeholder {
-    // padding-left: 21px;
-    @include text(25px, 37px, 400, rgba($dynamic-black, 0.58));
-    font-family: "Oswald", "sans-sarif";
-  }
-  &__close-btn {
-    position: absolute;
-    top: 50%;
-    right: 15px;
-    z-index: 1;
-    transform: translateY(-50%);
-  }
-  &__close-svg {
-    width: 28px;
-    height: 32px;
-    color: $colorGrey;
-    transition: color 0.3s ease-in-out;
-  }
+
   &__subscriptions-list {
     display: flex;
     flex-direction: column;
@@ -206,12 +173,7 @@
     &__group-communities-link:hover {
       background-color: $usc-gold;
     }
-    &__subscriptions-search-input:hover {
-      border: 1px solid $usc-gold;
-    }
-    &__close-btn:hover &__close-svg {
-      color: $usc-gold;
-    }
+
     &__subscriptions-link:hover {
       opacity: 0.4;
     }
@@ -245,22 +207,7 @@
     background-color: $usc-gold;
     outline: none;
   }
-  &__subscriptions-search-input:active {
-    border: 1px solid $usc-gold;
-  }
-  &__subscriptions-search-input:focus {
-    border: 1px solid $usc-gold;
-    outline: none;
-  }
-  &__close-btn:active &__close-svg {
-    color: $usc-gold;
-  }
-  &__close-btn:focus &__close-svg {
-    color: $usc-gold;
-  }
-  &__close-btn:focus {
-    outline: none;
-  }
+
   &__subscriptions-link:active {
     opacity: 0.4;
   }

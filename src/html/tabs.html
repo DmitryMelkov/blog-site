@@ -1,0 +1,21 @@
+<div class="tabs">
+  <div class="tabs__nav">
+    <button class="tabs__btn btn-reset" type="button" data-tab="#tab_1">
+      Электрожурналы
+    </button>
+    <button class="tabs__btn active btn-reset" type="button" data-tab="#tab_2">
+      Обсуждения
+    </button>
+  </div>
+  <div class="tabs__content">
+    <div class="tabs__item" id="tab_1">
+      @@include('blog-item.html',{ })
+      @@include('blog-item.html',{ })
+      @@include('blog-item.html',{ })
+    </div>
+    <div class="tabs__item active" id="tab_2">
+      @@include('comment.html',{ })
+
+    </div>
+  </div>
+</div>

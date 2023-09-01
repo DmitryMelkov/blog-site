@@ -42,20 +42,13 @@
       <h2 class="communities__title title-reset">
         Последние посещаемые сообщества
       </h2>
-      <div class="communities__subscriptions-search">
-        <input class="communities__subscriptions-search-input" type="text" placeholder="Найти сообщество">
-        <button class="communities__close-btn btn-reset">
-          <svg class="communities__close-svg">
-            <use xlink:href="img/icons/icons.svg#search-close"></use>
-          </svg>
-        </button>
-      </div>
+      @@include('search.html',{ })
+
       <ul class="communities__subscriptions-list">
         <li class="communities__subscriptions-item">
           <a class="communities__subscriptions-link" href="#">
             <div class="communities__subscriptions-link-left">
-              <img src="@img/communities-img-6.png" alt="group-icon"
-                class="communities__subscriptions-link-img">
+              <img src="@img/communities-img-6.png" alt="group-icon" class="communities__subscriptions-link-img">
             </div>
             <div class="communities__subscriptions-link-right">
               <h3 class="communities__subscriptions-link-title title-reset">NINEBOT GT/GT2 </h3>
@@ -71,8 +64,7 @@
         <li class="communities__subscriptions-item">
           <a class="communities__subscriptions-link" href="#">
             <div class="communities__subscriptions-link-left">
-              <img src="@img/communities-img-7.png" alt="group-icon"
-                class="communities__subscriptions-link-img">
+              <img src="@img/communities-img-7.png" alt="group-icon" class="communities__subscriptions-link-img">
             </div>
             <div class="communities__subscriptions-link-right">
               <h3 class="communities__subscriptions-link-title title-reset">Lemotion S1F / Inmotion S1 (L9) /
@@ -90,8 +82,7 @@
         <li class="communities__subscriptions-item">
           <a class="communities__subscriptions-link" href="#">
             <div class="communities__subscriptions-link-left">
-              <img src="@img/communities-img-8.png" alt="group-icon"
-                class="communities__subscriptions-link-img">
+              <img src="@img/communities-img-8.png" alt="group-icon" class="communities__subscriptions-link-img">
             </div>
             <div class="communities__subscriptions-link-right">
               <h3 class="communities__subscriptions-link-title title-reset">Inmotion unicycle V15</h3>

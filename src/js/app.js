@@ -1,9 +1,11 @@
-import * as flsFunctions from "./modules/functionsWebP.js";
+import * as flsFunctions from './modules/functionsWebP.js';
+import { usefulSlider } from './modules/useful-slider.js';
+import { mediaSlider } from './modules/media-slider.js';
+import { tabs } from './modules/tabs.js';
+import { blogItemSlider } from './modules/blog-item-slider.js';
 
 flsFunctions.isWeb();
-
-import Swiper, { Navigation, Pagination} from "swiper";
-
-const swiper = new Swiper();
-
-console.log('sdfvsd')
+usefulSlider();
+mediaSlider();
+tabs();
+blogItemSlider();
