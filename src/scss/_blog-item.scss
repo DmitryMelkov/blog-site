@@ -26,6 +26,8 @@
   &__header-icon-img {
     width: 70px;
     display: block;
+    border-radius: 10px;
+    border: 1px solid $detective-coat;
   }
   &__nickname {
     margin-bottom: 5px;

@@ -29,6 +29,8 @@
   &__img {
     width: 70px;
     height: 70px;
+    border-radius: 10px;
+    border: 1px solid $detective-coat;
   }
   &__rang {
     @include text(18px, 18px, 400, rgba($colorBlack, 0.6));

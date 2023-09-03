@@ -189,6 +189,12 @@
   &__admin-list-link {
     transition: opacity 0.3s ease-in-out;
   }
+  &__admin-list-avatar {
+    width: 70px;
+    height: 70px;
+    border-radius: 10px;
+    border: 1px solid $detective-coat;
+  }
   &__name-group-btn {
     width: 178px;
     height: 39px;
@@ -238,17 +244,18 @@
   &__subscribers-link {
     display: flex;
     align-items: center;
-    justify-content: center;
     gap: 30px;
+    transition: opacity 0.3s ease-in-out;
   }
   &__subscribers-link-img {
     width: 70px;
     height: 70px;
+    border-radius: 10px;
+    border: 1px solid $detective-coat;
   }
   &__subscribers-link-right {
     display: flex;
     flex-direction: column;
-    align-items: center;
   }
   &__subscribers-link-nickname {
     margin-bottom: 10px;
@@ -297,6 +304,9 @@
     &__subscribers-btn:hover {
       color: $usc-gold;
     }
+    &__subscribers-link:hover {
+      opacity: 0.4;
+    }
   }
 }
 
@@ -339,6 +349,13 @@
   }
   &__subscribers-btn:focus {
     color: $usc-gold;
+    outline: none;
+  }
+  &__subscribers-link:active {
+    opacity: 0.4;
+  }
+  &__subscribers-link:focus {
+    opacity: 0.4;
     outline: none;
   }
 }
