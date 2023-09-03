@@ -238,7 +238,7 @@ input::placeholder {
 }
 
 .container {
-  max-width: 1440px;
+  max-width: 1200px;
   width: 100%;
   margin: 0 auto;
   padding-left: 15px;
@@ -2711,7 +2711,7 @@ button.swiper-pagination-bullet {
 
 .modal-subscribers__dialog {
   position: relative;
-  width: 90%;
+  width: 80%;
   margin: 5% auto;
   pointer-events: none;
   -webkit-box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.0352941176), 0 4px 25px rgba(0, 0, 0, 0.0705882353);
