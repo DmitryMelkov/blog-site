@@ -2868,8 +2868,8 @@ button.swiper-pagination-bullet {
 }
 
 .modal-subscribers__item {
-  -ms-grid-column-span: 3;
-  grid-column: span 3;
+  -ms-grid-column-span: 2;
+  grid-column: span 2;
 }
 
 .modal-subscribers__link {
