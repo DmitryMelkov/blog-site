@@ -6,7 +6,9 @@
   margin-top: 14px;
   background-color: $colorWhite;
   border-radius: 15px;
-  box-shadow: 0 0 0 1px #00000009, 0 4px 25px #00000012;
+  box-shadow:
+    0 0 0 1px #00000009,
+    0 4px 25px #00000012;
   &__header {
     margin-bottom: 17px;
     display: flex;
@@ -54,7 +56,9 @@
     font-family: "Oswald", sans-serif;
     background-color: $usc-gold;
     border-radius: 7px;
-    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+    transition:
+      background-color 0.3s ease-in-out,
+      color 0.3s ease-in-out;
   }
 
   &__title {
@@ -71,7 +75,7 @@
   }
   &__descr {
     margin-bottom: 20px;
-    @include text(18px, 18px, 400, rgba($colorBlack, 0.7));
+    @include text(18px, 28px, 400, rgba($colorBlack, 0.7));
     font-family: "OpenSans", sans-serif;
   }
   &__social {

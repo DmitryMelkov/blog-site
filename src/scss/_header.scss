@@ -16,7 +16,7 @@
   }
   &__logo-img {
     background-color: $usc-gold;
-    padding: 20px;
+    padding: 15px;
     margin-right: 10px;
   }
   &__search {
@@ -78,6 +78,10 @@
   }
   &__admin-btn:not(:last-child) {
     margin-right: 23px;
+  }
+  &__admin-avatar {
+    width: 60px;
+    height: 60px;
   }
 }
 

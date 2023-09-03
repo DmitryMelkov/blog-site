@@ -2,7 +2,7 @@
 @import "_mixins";
 
 .community {
-  width: 75%;
+  width: 80%;
   display: flex;
   justify-content: space-between;
   &__center {
@@ -23,7 +23,7 @@
       0 4px 25px #00000012;
   }
   &__name-group {
-    padding: 10px;
+    padding: 20px 10px;
   }
   &__name {
     height: 290px;
@@ -117,7 +117,7 @@
   &__name-group-title {
     margin-bottom: 11px;
     text-align: center;
-    @include text(16px, 20px, 400, $colorBlack);
+    @include text(18px, 18px, 700, $colorBlack);
     font-family: "OpenSans", "sans-sarif";
   }
   &__name-group-img-content {
@@ -192,7 +192,6 @@
   &__name-group-btn {
     width: 178px;
     height: 39px;
-    margin-bottom: 19px;
     @include text(22px, 22px, 400, rgba($colorBlack, 0.75));
     font-family: "Oswald", "sans-sarif";
     background-color: $usc-gold;
@@ -203,7 +202,11 @@
       color 0.3s ease-in-out;
   }
   &__subscribers {
-    padding: 10px;
+    padding: 20px 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
   &__subscribers-title {
     text-align: center;
@@ -215,6 +218,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-bottom: 15px;
   }
   &__subscribers-number {
     margin-right: 5px;
@@ -229,6 +233,7 @@
     display: flex;
     flex-direction: column;
     gap: 20px;
+    margin-bottom: 15px;
   }
   &__subscribers-link {
     display: flex;
@@ -259,6 +264,11 @@
     @include text(14px, 14px, 400, rgba($colorBlack, 0.3));
     font-family: "OpenSans", "sans-sarif";
   }
+  &__subscribers-btn {
+    @include text(18px, 18px, 400, rgba($colorBlack, 0.5));
+    font-family: "OpenSans", "sans-sarif";
+    transition: color 0.3s ease-in-out;
+  }
 }
 
 .community__useful-slider .swiper-pagination-bullet {
@@ -283,6 +293,9 @@
     }
     &__media-swiper-slide:hover {
       opacity: 0.4;
+    }
+    &__subscribers-btn:hover {
+      color: $usc-gold;
     }
   }
 }
@@ -319,6 +332,13 @@
   }
   &__media-swiper-slide:focus {
     opacity: 0.4;
+    outline: none;
+  }
+  &__subscribers-btn:active {
+    color: $usc-gold;
+  }
+  &__subscribers-btn:focus {
+    color: $usc-gold;
     outline: none;
   }
 }
